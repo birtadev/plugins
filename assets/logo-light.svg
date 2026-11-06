@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96" height="96" fill="#1E7C71" role="img" aria-label="Birta">
+<style>
+.sun{animation:rise 1.6s cubic-bezier(.45,0,.2,1) .2s both}
+.glow{opacity:0;animation:flare 2.4s ease-out 1.4s both}
+.hair{transform-box:fill-box;animation:reach 1.6s cubic-bezier(.45,0,.2,1) .2s both}
+.hl{transform-origin:right center}.hr{transform-origin:left center}
+.trail{animation:fade 1.2s ease-out 1.2s both}
+@keyframes rise{from{transform:translateY(13px)}to{transform:translateY(0)}}
+@keyframes flare{0%{opacity:0}30%{opacity:.55}100%{opacity:0}}
+@keyframes reach{from{transform:scaleX(.35);opacity:.5}to{transform:scaleX(1);opacity:1}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.sun,.glow,.hair,.trail{animation:none}}
+</style>
+<defs>
+<clipPath id="sky"><rect width="48" height="32.4"/></clipPath>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+</defs>
+<g clip-path="url(#sky)"><path class="sun" d="M12 27.12C12.05 26.57 12.11 24.81 12.31 23.81C12.52 22.81 12.84 21.93 13.25 21.1C13.65 20.27 14.17 19.51 14.76 18.83C15.35 18.16 16.04 17.55 16.79 17.05C17.54 16.55 18.38 16.13 19.28 15.82C20.19 15.52 21.13 15.3 22.22 15.2C23.3 15.09 24.7 15.09 25.78 15.2C26.87 15.3 27.81 15.52 28.72 15.82C29.62 16.13 30.46 16.55 31.21 17.05C31.96 17.55 32.65 18.16 33.24 18.83C33.83 19.51 34.35 20.27 34.75 21.1C35.16 21.93 35.48 22.81 35.69 23.81C35.89 24.81 35.95 26.57 36 27.12L36 30.65Q36 32.25 34.4 32.25L13.6 32.25Q12 32.25 12 30.65ZM10 29.225H38V30.775H10Z" fill-rule="evenodd"/></g>
+<path class="glow" d="M12 27.12C12.05 26.57 12.11 24.81 12.31 23.81C12.52 22.81 12.84 21.93 13.25 21.1C13.65 20.27 14.17 19.51 14.76 18.83C15.35 18.16 16.04 17.55 16.79 17.05C17.54 16.55 18.38 16.13 19.28 15.82C20.19 15.52 21.13 15.3 22.22 15.2C23.3 15.09 24.7 15.09 25.78 15.2C26.87 15.3 27.81 15.52 28.72 15.82C29.62 16.13 30.46 16.55 31.21 17.05C31.96 17.55 32.65 18.16 33.24 18.83C33.83 19.51 34.35 20.27 34.75 21.1C35.16 21.93 35.48 22.81 35.69 23.81C35.89 24.81 35.95 26.57 36 27.12L36 30.65Q36 32.25 34.4 32.25L13.6 32.25Q12 32.25 12 30.65Z" filter="url(#blur)"/>
+<rect class="hair hl" x="1.6" y="29.525" width="10.8" height="0.95"/>
+<rect class="hair hr" x="35.6" y="29.525" width="10.8" height="0.95"/>
+<g class="trail"><rect x="16.5" y="33.7" width="15" height="1.4" rx="0.7" opacity="0.6"/><rect x="18.9" y="36.2" width="10.2" height="1.2" rx="0.6" opacity="0.38"/><rect x="21" y="38.5" width="6" height="1" rx="0.5" opacity="0.22"/></g>
+</svg>

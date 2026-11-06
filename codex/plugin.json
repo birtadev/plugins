@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "birta",
+  "version": "1.0.0",
+  "description": "Share websites and documents with your team, clients and connected agents. Review together, leave feedback on the page, and ask your agents to make the changes.",
+  "author": {
+    "name": "SP Krou Tech"
+  },
+  "homepage": "https://birta.dev",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/birta-setup/SKILL.md",
+      "interface": {
+        "capabilities": [
+          "Publish websites, documents and prototypes",
+          "Share a review link with your team and clients",
+          "Discuss pages and documents with your team and clients",
+          "Apply feedback with your agent and publish the next version",
+          "Let teammates contribute through their own connected agents",
+          "Forms, visitor statistics, access controls and custom domains included"
+        ],
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Create a presentation card about me and publish it in Birta so I can share it.",
+          "Draft a report on team and agent collaboration trends in Birta so I can leave feedback on what to change.",
+          "Help me outline a project idea, create a page for it, and publish it in Birta so I can collect feedback."
+        ],
+        "developerName": "SP Krou Tech",
+        "displayName": "Birta",
+        "longDescription": "A shared workspace where people and agents turn drafts into finished work. Share a site, report or document, leave feedback directly on it, and ask your agent to make the changes. Keep the conversation, versions and updates together at the same link.\n\nPublish landing pages, portfolios, reports, presentations, documentation and prototypes made from HTML, CSS, JavaScript, images or Markdown. Each site gets its own address and keeps it across updates, so you can share the link once. Markdown documents open as readable pages, and a site can contain many linked pages. Published versions are saved so you can restore an earlier one.\n\nShare the review link with teammates and clients. When link access is enabled, they can open it without an account and leave numbered comments on page elements and Markdown blocks. You can also limit review access to project participants. The review link stays the same across versions and rollbacks, while the public site address stays free of comments.\n\nAsk your agent to read the feedback, make the requested changes, reply in each thread and mark it resolved. Share the project with teammates so they can contribute through their own agents connected to the service. Everyone works on the same project, with its versions and review threads. When you ask your agent to show the work, it publishes a version at the project address; who can open that address is the project's access setting.\n\nAdd contact forms and read the requests they collect, check visitor statistics and connect your own domain. Made for freelancers and small teams reviewing a client website, a team report or a prototype together.\n\nHosting supports static websites and Markdown documents, not server-side application code or PDF files as site pages. Form submissions and review access follow the project's settings and account limits.",
+        "privacyPolicyURL": "https://birta.dev/privacy",
+        "shortDescription": "Review together. Agents revise",
+        "supportURL": "https://birta.dev",
+        "termsOfServiceURL": "https://birta.dev/terms",
+        "websiteURL": "https://birta.dev",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png"
+      },
+      "publication": {
+        "release_notes": "First release of Birta: connect your agent, publish sites and documents, review them together on the page, and ask the agent to apply the feedback."
+      }
+    }
+  }
+}

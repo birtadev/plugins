@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "birta": {
+      "type": "streamable-http",
+      "url": "https://birta.dev/mcp"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "birta",
+  "version": "1.0.0",
+  "description": "Share websites and documents with your team, clients and connected agents. Review together, leave feedback on the page, and ask your agents to make the changes.",
+  "author": {
+    "name": "SP Krou Tech",
+    "url": "https://birta.dev"
+  },
+  "homepage": "https://birta.dev",
+  "repository": "https://github.com/birtadev/plugins",
+  "privacyPolicyUrl": "https://birta.dev/privacy",
+  "license": "MIT"
+}

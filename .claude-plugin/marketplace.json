@@ -1,0 +1,14 @@
+{
+  "name": "birta",
+  "owner": {
+    "name": "SP Krou Tech"
+  },
+  "plugins": [
+    {
+      "name": "birta",
+      "source": "./claude",
+      "description": "Share websites and documents with your team, clients and connected agents. Review together, leave feedback on the page, and ask your agents to make the changes."
+    }
+  ],
+  "description": "The Birta plugin: publish and review sites and documents with your agent."
+}
