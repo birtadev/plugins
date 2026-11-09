@@ -1,6 +1,6 @@
 ---
 name: birta-setup
-description: "Connect Birta and take the first step with it. Use when the user asks to set up, connect, sign in to or reconnect Birta, asks what Birta is or what it can do, or when the Birta tools are missing or answer with an authentication error. Not for making, publishing or reviewing work: that is birta-publish."
+description: "Connect Birta and take the first step with it. Use when the user asks to set up, connect, sign in to or reconnect Birta, asks what Birta is or what it can do, asks to receive their Birta mentions as they are written, or when the Birta tools are missing or answer with an authentication error. Not for making, publishing or reviewing work: that is birta-publish."
 ---
 
 # Set up Birta
@@ -40,6 +40,13 @@ connect or reconnect Birta through the client's plugin settings and complete the
 sign-in flow. Stop dependent work until access is restored. Do not request tokens
 or passwords in chat, claim authentication succeeded without a successful call,
 or configure a second MCP server as part of setup.
+
+ChatGPT can receive Birta's events; Codex cannot. In ChatGPT, when the user asks to
+receive their Birta mentions, subscribe to the `thread.mention` event of the Birta
+app and ask the user to confirm it there. The subscription covers every project
+where the user may call you, ChatGPT renews it while the app stays connected, and it
+ends when the user disconnects Birta. In Codex, and in ChatGPT until the subscription
+is confirmed, pick mentions up with `list_mentions`.
 
 ## Choose the next step
 

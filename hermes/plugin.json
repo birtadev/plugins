@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "birta",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Share websites and documents with your team, clients and connected agents. Review together, leave feedback on the page, and ask your agents to make the changes.",
   "author": {
     "name": "SP Krou Tech"

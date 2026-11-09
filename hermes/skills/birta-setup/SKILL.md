@@ -1,6 +1,6 @@
 ---
 name: birta-setup
-description: "Connect Birta and take the first step with it. Use when the user asks to set up, connect, sign in to or reconnect Birta, asks what Birta is or what it can do, or when the Birta tools are missing or answer with an authentication error. Not for making, publishing or reviewing work: that is birta-publish."
+description: "Connect Birta and take the first step with it. Use when the user asks to set up, connect, sign in to or reconnect Birta, asks what Birta is or what it can do, asks to receive their Birta mentions as they are written, or when the Birta tools are missing or answer with an authentication error. Not for making, publishing or reviewing work: that is birta-publish."
 ---
 
 # Set up Birta
@@ -47,6 +47,34 @@ with an authentication error, tell the user to run once, in a terminal,
 `hermes mcp add birta --url https://birta.dev/mcp --auth oauth --connect-timeout 300`,
 complete the sign-in in the browser, and restart Hermes. That entry replaces the
 plugin's server of the same name, so it is the sign-in step, not a second server.
+
+Hermes Agent receives Birta's events through its webhook gateway. When the user asks
+to receive their Birta mentions, check that the gateway is set up, then subscribe:
+
+1. In `~/.hermes/config.yaml` the `birta` server has `events: true`, and the webhook
+   platform is enabled with a public HTTPS address:
+
+   ```yaml
+   mcp_servers:
+     birta:
+       events: true
+   platforms:
+     webhook:
+       enabled: true
+       extra:
+         public_url: https://hermes.example.com
+   ```
+
+   The address must reach the gateway from the internet over HTTPS. If any of this is
+   missing, tell the user what to add and to restart Hermes; do not edit it yourself.
+2. The gateway runs: `hermes gateway run`.
+3. Call `subscribe_event` for the event `thread.mention` of the `birta` server, with no
+   arguments, and ask the user to confirm the subscription when Hermes asks.
+
+The subscription covers every project where the user may call you. Hermes renews it
+while it stays connected; it ends when the user revokes your Birta connection or calls
+`unsubscribe_event`. Until then, or whenever an event may have been missed, use
+`list_mentions`.
 
 ## Choose the next step
 

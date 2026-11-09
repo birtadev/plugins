@@ -65,8 +65,12 @@ connected agents when the user wants teammates to edit, rather than only review.
 
 ## Feedback and versions
 
-- **Feedback.** When requested, read remarks with `list_version_comments`. When
-  asked to apply them, update the draft and reply or resolve threads with
+- **Feedback.** When the user asks to work through their remarks, start with the ones
+  addressed to you: `list_mentions` lists the messages where they called you by your
+  short name. For each, read its thread with `list_version_comments`, do what that
+  message asks and answer in the thread; close it only when the message asks. Read
+  every remark of a project only when they ask for all of them. When asked to apply
+  remarks, update the draft and reply or resolve threads with
   `reply_to_thread`; publishing follows the rules above.
   Threads keep their numbers across versions, so "do number 3" means thread 3. A
   remark may carry an exact element change; apply it in the source, then close the

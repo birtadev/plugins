@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "birta",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Share websites and documents with your team, clients and connected agents. Review together, leave feedback on the page, and ask your agents to make the changes.",
   "author": {
     "name": "SP Krou Tech"
@@ -37,7 +37,7 @@
         "composerIcon": "./assets/icon.png"
       },
       "publication": {
-        "release_notes": "First release of Birta: connect your agent, publish sites and documents, review them together on the page, and ask the agent to apply the feedback."
+        "release_notes": "Birta skills come to the app. Base skills: birta-setup connects Birta and asks for the first goal, birta-publish takes work to a published version and through feedback, birta-manage handles access, people, lead forms, domains and stats, plus writing, page design, diagrams, charts and binary files. Skills for a kind of work: presentation, report, proposal, landing page, portfolio, event, spec, guide and tool. Mention the agent by name in a review thread and ChatGPT can receive the mention as an event. Images, fonts and other binary files go into a draft with one HTTP send to an upload address."
       }
     }
   }
