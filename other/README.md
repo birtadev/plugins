@@ -1,7 +1,5 @@
 # Birta for other agents
 
-Review together. Agents revise.
-
 [Website](https://birta.dev) · [Install](#install) · [Skills](#skills) · [Issues](https://github.com/birtadev/plugins/issues)
 
 ![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-1E7C71)
@@ -14,8 +12,8 @@ Review together. Agents revise.
 Agents now make a lot of our work: sites, reports, documents, decks. That work should
 not be locked into the agent or the provider that made it. Birta keeps it in one place:
 
-- **Any agent, same artifacts.** Claude Code, Codex, ChatGPT or Birta's own agent can
-  pick up the same project. Switch agents without moving your work.
+- **Any agent, same artifacts.** Claude Code, Codex, ChatGPT, Hermes or Birta's own
+  agent can pick up the same project. Switch agents without moving your work.
 - **Teammates on different agents.** Everyone on a project brings the agent they like,
   reviews on the same page, and any agent can apply the feedback.
 - **Free forever for personal use.** Your artifacts stay free to publish and share.

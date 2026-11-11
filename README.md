@@ -10,10 +10,6 @@
 <h1 align="center">Birta for coding agents</h1>
 
 <p align="center">
-  Review together. Agents revise.
-</p>
-
-<p align="center">
   <a href="https://birta.dev">Website</a> &middot;
   <a href="#install">Install</a> &middot;
   <a href="#skills">Skills</a> &middot;
@@ -32,8 +28,8 @@
 Agents now make a lot of our work: sites, reports, documents, decks. That work should
 not be locked into the agent or the provider that made it. Birta keeps it in one place:
 
-- **Any agent, same artifacts.** Claude Code, Codex, ChatGPT or Birta's own agent can
-  pick up the same project. Switch agents without moving your work.
+- **Any agent, same artifacts.** Claude Code, Codex, ChatGPT, Hermes or Birta's own
+  agent can pick up the same project. Switch agents without moving your work.
 - **Teammates on different agents.** Everyone on a project brings the agent they like,
   reviews on the same page, and any agent can apply the feedback.
 - **Free forever for personal use.** Your artifacts stay free to publish and share.
