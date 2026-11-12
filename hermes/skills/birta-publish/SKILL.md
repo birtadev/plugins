@@ -20,6 +20,11 @@ address unless they chose one. Leave sharing and review-access settings at their
 defaults unless the user specified them. Use the returned project address for
 subsequent tools.
 
+Projects can carry up to five short tags. `list_projects` shows them and filters by
+them; `create_project` takes them, and `set_project_tags` replaces a project's whole
+set. Reuse tags already in the list instead of inventing near-synonyms, and list
+before replacing so you keep tags someone added in the panel.
+
 ## Create or continue the work
 
 Follow the connected tools' current descriptions and limits; tool names may
