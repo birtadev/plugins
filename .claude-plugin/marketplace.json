@@ -7,8 +7,8 @@
     {
       "name": "birta",
       "source": "./claude",
-      "description": "Share websites and documents with your team, clients and connected agents. Review together, leave feedback on the page, and ask your agents to make the changes."
+      "description": "A shared workspace for teams working with different AI agents. Keep documents and the context behind them together, so anyone on the team can pick up the work with their agent of choice. Every project adds to your team's shared knowledge: source material, discussions, decisions and revisions. Review reports, decks, proposals and interactive pages together, leave comments where changes are needed, and ask your agent to revise them."
     }
   ],
-  "description": "The Birta plugin: publish and review sites and documents with your agent."
+  "description": "A shared workspace for teams working with different AI agents. Documents and the context behind them stay together, so anyone can pick up the work with their own agent."
 }

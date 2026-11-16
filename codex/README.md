@@ -12,20 +12,23 @@
 Agents now make a lot of our work: sites, reports, documents, decks. That work should
 not be locked into the agent or the provider that made it. Birta keeps it in one place:
 
-- **Any agent, same artifacts.** Claude Code, Codex, ChatGPT, Hermes or Birta's own
-  agent can pick up the same project. Switch agents without moving your work.
-- **Teammates on different agents.** Everyone on a project brings the agent they like,
-  reviews on the same page, and any agent can apply the feedback.
-- **Free forever for personal use.** Your artifacts stay free to publish and share.
+- **Different agents, one workspace.** Claude Code, Codex, ChatGPT, Hermes or Birta's
+  own agent work with the same projects, files and versions. Teammates and clients keep
+  the tools they prefer.
+- **Context stays with the team.** Source material, discussions, decisions and revisions
+  stay with the work. A teammate and their agent can continue without asking the author
+  to explain it again.
+- **Shared standards for every agent.** Skills guide reports, presentations, proposals
+  and other formats, with shared rules for layout and clear writing.
 
-[Birta](https://birta.dev) is a shared workspace where people and agents turn drafts
-into finished work. Publish a site, report or document, review it together on the page,
-and ask your agent to apply the feedback.
+[Birta](https://birta.dev) is a shared workspace for teams working with different AI
+agents. Documents, feedback and the context behind them stay together, so anyone on the
+team can pick up the work with their agent of choice.
 
 Birta connects to your agent through its MCP server (`https://birta.dev/mcp`) and adds
 the skills below. You sign in to Birta in the browser; nothing here holds keys or tokens.
 Every tool call goes to `birta.dev` and acts on the Birta projects you can access:
-files, versions, publishing, sharing, lead forms and domains.
+files, versions, comments, publishing, sharing, lead forms and domains.
 
 ## Install
 
@@ -78,7 +81,7 @@ The agent picks a skill up on its own when your request matches it.
 ## Get started
 
 Ask your agent to set up Birta, or say what you want to make:
-"Create a presentation card about me and publish it in Birta so I can share it."
+"Turn these notes into a report in Birta and share it with my team for review."
 
 ## Support
 

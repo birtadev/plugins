@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "birta",
-  "version": "1.2.0",
-  "description": "Share websites and documents with your team, clients and connected agents. Review together, leave feedback on the page, and ask your agents to make the changes.",
+  "version": "1.2.1",
+  "description": "A shared workspace for teams working with different AI agents. Keep documents and the context behind them together, so anyone on the team can pick up the work with their agent of choice. Every project adds to your team's shared knowledge: source material, discussions, decisions and revisions. Review reports, decks, proposals and interactive pages together, leave comments where changes are needed, and ask your agent to revise them.",
   "author": {
     "name": "SP Krou Tech"
   },
@@ -12,24 +12,28 @@
       "onboardingSkill": "./skills/birta-setup/SKILL.md",
       "interface": {
         "capabilities": [
-          "Publish websites, documents and prototypes",
-          "Share a review link with your team and clients",
-          "Discuss pages and documents with your team and clients",
-          "Apply feedback with your agent and publish the next version",
-          "Let teammates contribute through their own connected agents",
-          "Forms, visitor statistics, access controls and custom domains included"
+          "Work on the same projects from different AI agents",
+          "Keep source material, discussions and decisions with each document",
+          "Pick up a teammate's work with your own connected agent",
+          "Create reports, decks, proposals and interactive pages",
+          "Use skills for document structure, design and clear writing",
+          "Share work with teammates and clients for review",
+          "Leave comments on specific page elements and Markdown blocks",
+          "Ask your agent to apply feedback and publish the next version",
+          "Keep version history and restore earlier work",
+          "Collect form submissions, track visits and connect a custom domain"
         ],
         "category": "Productivity",
         "defaultPrompt": [
-          "Create a presentation card about me and publish it in Birta so I can share it.",
-          "Draft a report on team and agent collaboration trends in Birta so I can leave feedback on what to change.",
-          "Help me outline a project idea, create a page for it, and publish it in Birta so I can collect feedback."
+          "Turn these notes into a report in Birta and share it with my team for review.",
+          "Open our team's Birta project, read the discussion and continue the proposal from the latest version.",
+          "Read the comments on our Birta page, make the changes and publish the next version."
         ],
         "developerName": "SP Krou Tech",
         "displayName": "Birta",
-        "longDescription": "A shared workspace where people and agents turn drafts into finished work. Share a site, report or document, leave feedback directly on it, and ask your agent to make the changes. Keep the conversation, versions and updates together at the same link.\n\nPublish landing pages, portfolios, reports, presentations, documentation and prototypes made from HTML, CSS, JavaScript, images or Markdown. Each site gets its own address and keeps it across updates, so you can share the link once. Markdown documents open as readable pages, and a site can contain many linked pages. Published versions are saved so you can restore an earlier one.\n\nShare the review link with teammates and clients. When link access is enabled, they can open it without an account and leave numbered comments on page elements and Markdown blocks. You can also limit review access to project participants. The review link stays the same across versions and rollbacks, while the public site address stays free of comments.\n\nAsk your agent to read the feedback, make the requested changes, reply in each thread and mark it resolved. Share the project with teammates so they can contribute through their own agents connected to the service. Everyone works on the same project, with its versions and review threads. When you ask your agent to show the work, it publishes a version at the project address; who can open that address is the project's access setting.\n\nAdd contact forms and read the requests they collect, check visitor statistics and connect your own domain. Made for freelancers and small teams reviewing a client website, a team report or a prototype together.\n\nHosting supports static websites and Markdown documents, not server-side application code or PDF files as site pages. Form submissions and review access follow the project's settings and account limits.",
+        "longDescription": "Birta is a shared workspace for teams working with different AI agents. Each person connects the agent they prefer, and everyone works with the same projects, files, versions and discussions. Nobody has to switch tools to join the work.\n\nEvery project adds to your team's shared knowledge: source material, discussions, decisions and revisions stay next to the result. The next person and their agent can see what was decided and continue from there, without asking the author to explain it all again.\n\nCreate reports, presentations, proposals, documentation, landing pages, portfolios, event pages, prototypes and small interactive tools. Built-in skills guide structure, design and clear writing, so work from different agents follows the same standards. Birta supports HTML, CSS, JavaScript, images and Markdown, so the result opens in a browser.\n\nShare a link with your team or a client. When link access is enabled, they can open it without an account and leave comments on specific elements or Markdown blocks. You can also restrict access to project members.\n\nAsk your agent to read the comments, revise the work, reply in each thread and publish the next version. Each project keeps its address across updates, and published versions remain available to restore.\n\nAdd forms, manage incoming requests, check visitor statistics and connect a custom domain when a page needs to do more.\n\nFor teams and specialists who use agents every day and share their work with teammates, managers or clients.\n\nBirta hosts static sites and Markdown documents. It does not run server-side application code or serve PDFs as pages. Access and form submissions follow project settings and account limits.",
         "privacyPolicyURL": "https://birta.dev/privacy",
-        "shortDescription": "Review together. Agents revise",
+        "shortDescription": "Shared workspace for any agent",
         "supportURL": "https://birta.dev",
         "termsOfServiceURL": "https://birta.dev/terms",
         "websiteURL": "https://birta.dev",
@@ -37,7 +41,7 @@
         "composerIcon": "./assets/icon.png"
       },
       "publication": {
-        "release_notes": "Birta skills come to the app. Base skills: birta-setup connects Birta and asks for the first goal, birta-publish takes work to a published version and through feedback, birta-manage handles access, people, lead forms, domains and stats, plus writing, page design, diagrams, charts and binary files. Skills for a kind of work: presentation, report, proposal, landing page, portfolio, event, spec, guide and tool. Mention the agent by name in a review thread and ChatGPT can receive the mention as an event. Images, fonts and other binary files go into a draft with one HTTP send to an upload address. Projects carry tags: the project list shows them and filters by them, and a project's tags can be set when it is created or replaced later."
+        "release_notes": "Birta skills come to the app. Base skills: birta-setup connects Birta and asks for the first goal, birta-publish takes work to a published version and through feedback, birta-manage handles access, people, lead forms, domains and stats, plus writing, page design, diagrams, charts and binary files. Skills for a kind of work: presentation, report, proposal, landing page, portfolio, event, spec, guide and tool. Mention the agent by name in a review thread and ChatGPT can receive the mention as an event. Images, fonts and other binary files go into a draft with one HTTP send to an upload address. Projects carry tags: the project list shows them and filters by them, and a project's tags can be set when it is created or replaced later. The listing now describes Birta as a shared workspace for teams on different AI agents."
       }
     }
   }
