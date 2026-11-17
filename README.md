@@ -19,6 +19,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Claude_Code-plugin-1E7C71" alt="Claude Code plugin">
   <img src="https://img.shields.io/badge/Codex-plugin-1E7C71" alt="Codex plugin">
+  <img src="https://img.shields.io/badge/Cursor-plugin-1E7C71" alt="Cursor plugin">
   <img src="https://img.shields.io/badge/Hermes_Agent-plugin-1E7C71" alt="Hermes Agent plugin">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-1E7C71" alt="MIT license"></a>
 </p>
@@ -28,9 +29,9 @@
 Agents now make a lot of our work: sites, reports, documents, decks. That work should
 not be locked into the agent or the provider that made it. Birta keeps it in one place:
 
-- **Different agents, one workspace.** Claude Code, Codex, ChatGPT, Hermes or Birta's
-  own agent work with the same projects, files and versions. Teammates and clients keep
-  the tools they prefer.
+- **Different agents, one workspace.** Claude Code, Codex, ChatGPT, Cursor, Hermes or
+  Birta's own agent work with the same projects, files and versions. Teammates and
+  clients keep the tools they prefer.
 - **Context stays with the team.** Source material, discussions, decisions and revisions
   stay with the work. A teammate and their agent can continue without asking the author
   to explain it again.
@@ -52,6 +53,7 @@ Each agent has its own folder with the plugin and the steps to install it:
 
 - [Claude Code](claude/)
 - [Codex and ChatGPT](codex/)
+- [Cursor](cursor/)
 - [Hermes Agent](hermes/)
 - [Other agents](other/)
 

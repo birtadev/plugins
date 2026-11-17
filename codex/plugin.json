@@ -42,6 +42,57 @@
       },
       "publication": {
         "release_notes": "Birta skills come to the app. Base skills: birta-setup connects Birta and asks for the first goal, birta-publish takes work to a published version and through feedback, birta-manage handles access, people, lead forms, domains and stats, plus writing, page design, diagrams, charts and binary files. Skills for a kind of work: presentation, report, proposal, landing page, portfolio, event, spec, guide and tool. Mention the agent by name in a review thread and ChatGPT can receive the mention as an event. Images, fonts and other binary files go into a draft with one HTTP send to an upload address. Projects carry tags: the project list shows them and filters by them, and a project's tags can be set when it is created or replaced later. The listing now describes Birta as a shared workspace for teams on different AI agents."
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Create a page and publish it. Starts from an empty account; later cases use the project it creates.",
+              "prompt": "Make a one-page report on global coffee consumption and publish it with Birta.",
+              "tools_triggered": "create_project, create_version, write_file, publish_version",
+              "expected_behavior": "A new project is created, the report is written to it and version 1 is published. The reply gives two links: the live site address, where the report opens without an account, and a review link for that version."
+            },
+            {
+              "description": "Revise published work by asking. Runs after the first case.",
+              "prompt": "Change the headline to 'Coffee in 2026' and publish the update.",
+              "tools_triggered": "list_projects, create_version, read_file, edit_file, publish_version",
+              "expected_behavior": "The live site address now shows the headline Coffee in 2026 as version 2, and the project in the Birta dashboard lists both versions."
+            },
+            {
+              "description": "Act on review remarks. Runs after the second case. Before running, open the review link of the latest version in a browser, click a block on the page and leave a remark, for example: add a one-line takeaway under the headline.",
+              "prompt": "Read the remarks, make the changes, and publish the update.",
+              "tools_triggered": "list_projects, list_versions, list_version_comments, create_version, read_file, edit_file, reply_to_thread, publish_version",
+              "expected_behavior": "The reply names the remark and says it was applied; the change the reviewer asked for is on the page at the same address as version 3, and the remark's thread gets a reply describing the change."
+            },
+            {
+              "description": "Change who can open a project. Runs after the first case: a new project opens only for its owner and invited people.",
+              "prompt": "Let anyone with the link open my Birta coffee consumption report, then tell me who can open it now.",
+              "tools_triggered": "list_projects, set_project_access, project_settings",
+              "expected_behavior": "Project access changes to anyone with the link; the reply says so, and the site address now opens in a signed-out browser."
+            },
+            {
+              "description": "Collect requests with a form. Runs after the fourth case, so the form can be filled in a signed-out browser.",
+              "prompt": "Add a feedback form to my Birta coffee consumption report, publish it, and after I send a test request, show me the requests it received.",
+              "tools_triggered": "list_projects, list_versions, create_form, create_version, read_file, edit_file, publish_version, list_leads",
+              "expected_behavior": "The published page shows a feedback form; after the reviewer submits it, the reply lists that request with the name and message entered."
+            }
+          ],
+          "negative": [
+            {
+              "description": "A request unrelated to documents, pages or Birta projects: the plugin should not act and no Birta tool is called.",
+              "prompt": "What will the weather be in Paris tomorrow?"
+            },
+            {
+              "description": "Birta hosts static sites and Markdown documents only: the agent should explain it cannot run server code or a database there, and publish nothing.",
+              "prompt": "Deploy my Node.js Express API with its Postgres database to Birta."
+            },
+            {
+              "description": "No tool deletes a project: the agent should say projects are deleted from the Birta dashboard and change nothing.",
+              "prompt": "Delete all of my Birta projects."
+            }
+          ]
+        },
+        "demo_recording_url": "https://br-noisy-shape-asdpwvkx.storage.c-4.eu-central-1.aws.neon.tech/assets/Birta-demo-v7-draft.mp4"
       }
     }
   }

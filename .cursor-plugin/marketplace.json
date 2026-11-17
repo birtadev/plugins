@@ -1,0 +1,16 @@
+{
+  "name": "birta",
+  "owner": {
+    "name": "SP Krou Tech"
+  },
+  "metadata": {
+    "description": "A shared workspace for teams working with different AI agents. Documents and the context behind them stay together, so anyone can pick up the work with their own agent."
+  },
+  "plugins": [
+    {
+      "name": "birta",
+      "source": "cursor",
+      "description": "A shared workspace for teams working with different AI agents. Documents and the context behind them stay together, so anyone can pick up the work with their own agent."
+    }
+  ]
+}

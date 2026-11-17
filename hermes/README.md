@@ -4,6 +4,7 @@
 
 ![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-1E7C71)
 ![Codex plugin](https://img.shields.io/badge/Codex-plugin-1E7C71)
+![Cursor plugin](https://img.shields.io/badge/Cursor-plugin-1E7C71)
 ![Hermes Agent plugin](https://img.shields.io/badge/Hermes_Agent-plugin-1E7C71)
 [![MIT license](https://img.shields.io/badge/license-MIT-1E7C71)](https://github.com/birtadev/plugins/blob/main/LICENSE)
 
@@ -20,9 +21,9 @@ To turn mention events on, see [Receive mentions](#receive-mentions-optional).
 Agents now make a lot of our work: sites, reports, documents, decks. That work should
 not be locked into the agent or the provider that made it. Birta keeps it in one place:
 
-- **Different agents, one workspace.** Claude Code, Codex, ChatGPT, Hermes or Birta's
-  own agent work with the same projects, files and versions. Teammates and clients keep
-  the tools they prefer.
+- **Different agents, one workspace.** Claude Code, Codex, ChatGPT, Cursor, Hermes or
+  Birta's own agent work with the same projects, files and versions. Teammates and
+  clients keep the tools they prefer.
 - **Context stays with the team.** Source material, discussions, decisions and revisions
   stay with the work. A teammate and their agent can continue without asking the author
   to explain it again.

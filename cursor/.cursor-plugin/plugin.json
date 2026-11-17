@@ -1,0 +1,18 @@
+{
+  "name": "birta",
+  "displayName": "Birta",
+  "version": "1.0.0",
+  "description": "A shared workspace for teams working with different AI agents. Documents and the context behind them stay together, so anyone can pick up the work with their own agent.",
+  "author": {
+    "name": "SP Krou Tech"
+  },
+  "publisher": "SP Krou Tech",
+  "homepage": "https://birta.dev",
+  "repository": "https://github.com/birtadev/plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["birta", "mcp", "publish", "share", "website", "html", "landing page", "report", "presentation", "docs", "portfolio", "review", "feedback", "collaboration", "hosting"],
+  "category": "integrations",
+  "tags": ["birta", "publishing", "collaboration", "mcp"],
+  "mcpServers": "./mcp.json"
+}
